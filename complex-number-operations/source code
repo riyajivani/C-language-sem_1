@@ -1,0 +1,75 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+C#, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+typedef struct complex{
+    float real;
+    float img;
+}cmp;
+
+cmp addition(cmp n1, cmp n2){
+    cmp temp;
+    temp.real = n1.real + n2.real;
+    temp.img = n1.img + n2.img;
+    return temp;
+}
+
+cmp substraction(cmp n1, cmp n2){
+    cmp temp;
+    temp.real = n2.real - n1.real;
+    temp.img = n2.img - n1.img;
+    return temp;
+}
+
+cmp multiplication(cmp n1, cmp n2){
+    cmp temp;
+    temp.real = (n1.real * n2.real) - (n1.img * n2.img);
+    temp.img = (n1.real * n2.img) + (n2.real * n1.img);
+    return temp;
+}
+
+cmp division(cmp n1, cmp n2){
+    cmp temp;
+    temp.real = (n1.real * n2.real) - (n1.img * ((-1)*n2.img));
+    temp.img = (n1.real * ((-1)*n2.img)) + (n2.real * n1.img);
+    
+    float temp1;
+    temp1 = (n2.real*n2.real) + (n2.img*n2.img);
+    
+    cmp result ;
+    result.real = (temp.real / temp1);
+    result.img = (temp.img / temp1);
+    return result;
+}
+
+int main()
+{
+    cmp num1, num2;
+    
+    printf("Enter first number\n");
+    scanf("%f %f",&num1.real, &num1.img);
+    
+    printf("Enter first number\n");
+    scanf("%f %f",&num2.real, &num2.img);
+    
+    cmp add = addition(num1, num2);
+    printf("Addition = %.2f + %.2fi\n", add.real, add.img);
+    
+    cmp sub = substraction(num1, num2);
+    printf("Substraction = %.2f + %.2fi\n", sub.real, sub.img);
+    
+    cmp mul = multiplication(num1, num2);
+    printf("Multiplication = %.2f + %.2fi\n", mul.real, mul.img);
+    
+    cmp divi = division(num1, num2);
+    printf("Division = %.2f + %.2fi", divi.real, divi.img);
+    return 0;
+}
+
+

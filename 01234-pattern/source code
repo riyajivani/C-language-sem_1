@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int n, a=0;
+    scanf("%d", &n);
+    
+//     for(i=n; i>=0; i--)
+//     {
+//         for(s=0; s<n-i; s++)
+//         {
+//             printf(" ");
+//         }
+        
+//         for(j=1; j<=i; j++)
+//         {
+//             printf("%d",a);
+//             a=a+1;
+//         }
+//         printf("\n");
+//     }
+    
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            if(j<i){
+                printf(" ");
+            }
+            else{
+                printf("%d",a);
+                a++;
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
