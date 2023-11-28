@@ -1,0 +1,97 @@
+1. OVERVIEW OF C
+
+Review questions : 
+
+ex.(1.1) :  (a)true (b)true (c)false (d)true (e)false (f)false (g)true (h)false (i)false (j)true
+
+ex.(1.2) :  (b)only one function may be named main ().
+
+ex.(1.3) :  (a)use of comments reduces the speed of executation of the program.
+	(b)comments serve as internal documentation for programmers.
+	(d)in C, we can have comments inside comments.
+
+ex.(1.4) :  (a)closing brace
+	(b)main
+	(c)math.h
+	(d)\n
+
+ex.(1.5) :  After removing the semicolon at the end of the printf statement in the prog. of figure (1.2). 
+	program shows an error and can not execute. so there's nothing in output. 
+
+ex.(1.6) :  After deleting line 5 in sample prog. 2 . program shows an error and can't exicute. error
+	massage shows that the 'number' variable is undeclared so first use it in the function.it 
+	error massage is very helpful for knowing that there is something wrong in program.
+
+ex.(1.7) :  drive(D)/pps extra/program 3 of ex. (1.7).
+
+ex.(1.8) :  in the program end of first comment line is missing and comment line in comment line is
+	there in the program.
+
+ex.(1.9) :  there must be a angle brace in header file.In the program paranthasis is used instead of
+	angle brace.
+
+ex.(1.10): C language is case sensitive language  so we can't use uppercase in header file or declaration
+	statement of variable.
+
+ex.(1.11):  #define is typically used to make source programs easy to change and easy to compile in different
+	 execution environments. Directives in the source file tell the preprocessor to perform specific actions.
+	
+ex.(1.12): The #include preprocessor directive is used to paste code of given file into current file.If included file is 
+	not found, compiler renders error. By the use of #include directive, we provide information to the
+	preprocessor where to look for the header files.
+
+ex.(1.13): The first void means that the main function returns no value. The second void in parenthesis (void) 
+	means that the main function accepts no arguments. 
+
+ex.(1.14): (a)main()-it means that main function will return an integer type of argument and empty parenthesis means 
+	it will not receive any command line argument.
+	void main(void) - it means main will not return any argument and also it will not receive any command line 
+	argument. If you don't specify any return type before function name then by default it is considered to be of
+ 	type "int" and empty parenthesis or void in parenthesis means same thing, function is not going to receive anything.
+	
+	(b)The void main() indicates that the main() function will not return any value, but the int main() indicates that
+	    the main() can return integer type data.
+
+ex.(1.15): Commenting involves placing Human Readable Descriptions inside of computer programs detailing what the 
+	Code is doing. Proper use of commenting can make code maintenance much easier, as well as helping make 
+	finding bugs faster. Further, commenting is very important when writing functions that other people will use.
+
+ex.(1.16): Look of your program' is very important because  as your program is going to be referred by many people. 
+	When they read your program they should get clear idea what that program is written for and they should 
+	not even need to read all the program.
+
+ex.(1.17): Blank spaces are permitted in the print function in C programming language.
+
+ex.(1.18): Structure of C program is given below:
+	
+	Documentation section
+	Link section
+	Definition section
+	Global declaration section	main() Function section	{
+		Declaration part
+		Executable part
+	}
+	Subprogram section	Function 1
+	Function 2
+	     .......
+	     .......             (User defined functions)
+	Function n
+
+ex.(1.19): c program on Linux or Unix OS.
+
+	1. Write a Hello World C Program. Create the helloworld. c program using a Vim editor as shown below. ...
+	2. Make sure C Compiler (gcc) is installed on your system. Make sure gcc is installed on your system as shown
+	    below. ...
+	3. Compile the helloworld. c Program. ...
+	4. Execute the C Program (a. out)
+
+ex.(1.20): To compile and link multiple source program files, we must append all the files names to the cc command.
+		cc filename-1.c ... . filename-n.c
+	These files will be seperately compiled into object files called
+		filename-i.o
+	and then linked to produce an executable program file a.out .
+
+
+	
+
+	
